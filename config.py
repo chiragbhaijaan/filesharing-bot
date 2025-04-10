@@ -13,20 +13,20 @@ APP_ID = int(os.environ.get("APP_ID", "29640594"))
 API_HASH = os.environ.get("API_HASH", "425945b03d2da856ab43e3f20e5570b7")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002445977686"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001883654211"))
 
 #OWNER ID 
 OWNER_ID = int(os.environ.get("OWNER_ID", "6710996831"))
 
 #Port
-PORT = os.environ.get("PORT", "8060")
+PORT = os.environ.get("PORT", "8085")
 
 #Database 
-# Database [https://youtu.be/qFB0cFqiyOM?si=fVicsCcRSmpuja1A]
-# DB_URI = "mongodb+srv://wicidev806:b9zm6GzbC7Y5lHWR@cluster0.qsx9a.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
-#Database 
-DB_URI = "mongodb+srv://jebed93486:K31WWi0KlGkLv7Zi@cluster0.1bgj5.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 #Database [https://youtu.be/qFB0cFqiyOM?si=fVicsCcRSmpuja1A]
+# DB_URI = "mongodb+srv://awt:awt@cluster0.ltdwktu.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+#Database 
+DB_URI = "mongodb+srv://holonef337:EWUvS8XJvyb54X9K@cluster0.suqd9.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+#Database 
 DB_NAME = os.environ.get("DATABASE_NAME", "Cluster0")
 
 #Shortner (token system) 
@@ -55,7 +55,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 START_MSG = os.environ.get("START_MESSAGE", "𝗛𝗲𝗹𝗹𝗼 {first}\n\n𝗜 𝗰𝗮𝗻 𝘀𝘁𝗼𝗿𝗲 𝗽𝗿𝗶𝘃𝗮𝘁𝗲 𝗳𝗶𝗹𝗲𝘀 𝗶𝗻 𝗦𝗽𝗲𝗰𝗶𝗳𝗶𝗲𝗱 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 𝗮𝗻𝗱 𝗼𝘁𝗵𝗲𝗿 𝘂𝘀𝗲𝗿𝘀 𝗰𝗮𝗻 𝗮𝗰𝗰𝗲𝘀𝘀 𝗶𝘁 𝗳𝗿𝗼𝗺 𝘀𝗽𝗲𝗰𝗶𝗮𝗹 𝗹𝗶𝗻𝗸.")
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "6706180358 6710996831 999739828").split()): 
+    for x in (os.environ.get("ADMINS", "6706180358 6710996831").split()): 
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
